@@ -26,14 +26,14 @@ button{border: none; background-color: inherit;}
 h2,h3{font-family: 'Lora', serif;}
 body{font-family: 'Noto Sans KR', sans-serif; color: var(--main-font-color); font-weight: 400;}
 
-header{position: relative; width: 100%;}
-header .inner {padding: 10px 0; display: flex; justify-content: space-between; align-items: center; z-index: 39;}
-header .inner .ham-btn{display: none; font-size: 32px; z-index: 41; position: relative;}
+header{position: relative; width: 100%; z-index: 30;}
+header .inner {padding: 10px 0; display: flex; justify-content: space-between; align-items: center;}
+header .inner .ham-btn{display: none; font-size: 32px; z-index: 40; position: relative;}
 header .inner .ham-menu-title{display: none;}
 header .logo a{width: 200px; display: block;}
 header .logo a img{width: 100%; object-fit: contain;}
 
-header .inner #main-menu{display: flex; gap: 40px; z-index: 40; position: relative;}
+header .inner #main-menu{display: flex; gap: 40px; z-index: 40;}
 header .title{text-align: center; padding: 2rem; font-size: 4rem; font-weight: 400; color: var(--main-font-color);}
 footer .copyright{text-align: center;padding: 30px; background-color: var(--main-font-color); color: #fff; padding-bottom: 10px;}
 
@@ -151,7 +151,7 @@ footer .copyright{text-align: center;padding: 30px; background-color: var(--main
   html{font-size: 12px;}
   html,body{overflow-x: hidden;}
   header .inner{position: fixed; width: 100%;}
-  .inner #main-menu{display: none; position: absolute; right: -60%; flex-direction: column; background-color: #fff; width: 60%; top: 0; height: 100vh; box-sizing: border-box;padding: 30px; transition: .5s; z-index: 40;}
+  .inner #main-menu{display: none; position: absolute; right: -60%; flex-direction: column; background-color: #fff; width: 60%; top: 0; height: 100vh; box-sizing: border-box;padding: 30px; transition: .5s; z-index: 30;}
   .inner #main-menu .ham-menu-title{ font-size: 2rem; border-bottom: 3px solid var(--main-font-color); padding-bottom: 1rem;}
   .inner .ham-btn{display: block !important;}
   .inner .ham-menu-title{display: block !important;}
