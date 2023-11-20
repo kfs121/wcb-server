@@ -26,7 +26,7 @@ button{border: none; background-color: inherit;}
 h2,h3{font-family: 'Lora', serif;}
 body{font-family: 'Noto Sans KR', sans-serif; color: var(--main-font-color); font-weight: 400;}
 
-header{position: relative; width: 100%; z-index: 30;}
+header{position: relative; width: 100%;z-index: 39;}
 header .inner {padding: 10px 0; display: flex; justify-content: space-between; align-items: center;}
 header .inner .ham-btn{display: none; font-size: 32px; z-index: 40; position: relative;}
 header .inner .ham-menu-title{display: none;}
@@ -150,7 +150,8 @@ footer .copyright{text-align: center;padding: 30px; background-color: var(--main
 @media (max-width:512px) {
   html{font-size: 12px;}
   html,body{overflow-x: hidden;}
-  header .inner{position: fixed; width: 100%;}
+  header{position: relative;}
+  header .inner{position: fixed; width: 100%;top: 0;}
   .inner #main-menu{display: none; position: absolute; right: -60%; flex-direction: column; background-color: #fff; width: 60%; top: 0; height: 100vh; box-sizing: border-box;padding: 30px; transition: .5s; z-index: 30;}
   .inner #main-menu .ham-menu-title{ font-size: 2rem; border-bottom: 3px solid var(--main-font-color); padding-bottom: 1rem;}
   .inner .ham-btn{display: block !important;}
