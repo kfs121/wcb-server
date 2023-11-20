@@ -33,7 +33,7 @@ header .inner .ham-menu-title{display: none;}
 header .logo a{width: 200px; display: block;}
 header .logo a img{width: 100%; object-fit: contain;}
 
-header .inner #main-menu{display: flex; gap: 40px;}
+header .inner #main-menu{display: flex; gap: 40px; z-index: 40;}
 header .title{text-align: center; padding: 2rem; font-size: 4rem; font-weight: 400; color: var(--main-font-color);}
 footer .copyright{text-align: center;padding: 30px; background-color: var(--main-font-color); color: #fff; padding-bottom: 10px;}
 

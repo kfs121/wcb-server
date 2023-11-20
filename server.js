@@ -8,6 +8,10 @@ const port = 3333;
 
 const app = express();
 
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 app.get("/",(req,res)=>{
   getHtmlPage("index.html")
   .then(html=>{
@@ -43,7 +47,6 @@ app.get("/contact",(req,res)=>{
   });
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port, ()=>{
   console.log(`Server is running : http://${hostName}:${port}`);
